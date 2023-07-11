@@ -41,7 +41,8 @@ async def process_photo(message: types.Message):
 
                 image = Image.open("image.jpg")
 
-                font = ImageFont.truetype("arial.ttf", 45)
+                font = ImageFont.truetype("./arial.ttf", 45)
+
                 drawer = ImageDraw.Draw(image)
 
                 width, height = image.size
