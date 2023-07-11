@@ -9,7 +9,6 @@ token = "5954530100:AAGUkVKnI-iJXspRGG-BIqNBiwdMRYfpddo"
 bot = Bot(token=token)
 dp = Dispatcher(bot)
 
-
 @dp.message_handler(commands=['start'])
 async def start_message(message: types.Message):
     await message.reply("Привіт ✌\nнадішли фоточку в форматі png/jpeg, щоб створити мем")
